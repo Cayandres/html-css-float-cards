@@ -8,8 +8,15 @@ body{
 }
 
   .container{
-    max-width: 1000px;
+    max-width: 1170px;
+    width: 80%;
     margin: 0 auto;
+  }
+
+  .clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
   }
 
 .container h1{
@@ -17,4 +24,42 @@ body{
   text-align: center;
   padding: 3rem;
   color: #e52d6c;
+}
+
+.row
+
+.col{
+  float: left;
+  width: 25%;
+  max-height: 80px;
+  background-color: #0f0e17;
+  border: 1px solid black;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.col img{
+  width: 79px;
+  float: left;
+
+}
+
+li{
+  padding: 7px;
+  list-style: none;
+  color: white;
+}
+
+
+li>ul:first-child{
+  font-size: 17px;
+  font-weight: bold;
+
+} 
+ul{
+  padding-left: 75px;
+}
+
+li>ul:last-child{
+  color: #2c7fb5;
 }
